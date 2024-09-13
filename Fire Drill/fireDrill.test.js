@@ -59,13 +59,13 @@ test("check palindrome in strings", ()=>{
 test("sum all the multiples of 3 and 5", ()=>{
 	let result = sumMultiplesOf3And5(25);
 	expect(result).toBe(15)
+
+	result = sumMultiplesOf3And5(45);
+	expect(45)
 })
 
 test("isLeapYear", ()=>{
 	let result = isLeapYear(2024);
 	expect(result).toBe(true);
 })
-
-
-
 
