@@ -17,4 +17,15 @@ function evenNumbers(numbers){
 	return newArray
 }
 
-module.exports = {add, subtract, evenNumbers};
+function sumEvenNumbers(arrayOfNumbers){
+	let sum = 0;
+	for(let number in arrayOfNumbers){
+		if(number  % 2 == 0){
+			sum += number;
+		}
+	}
+	return sum;
+}
+
+
+module.exports = {add, subtract, evenNumbers, sumEvenNumbers};

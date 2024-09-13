@@ -1,4 +1,4 @@
-const {add, subtract, evenNumbers} = require("./index.js");
+const {add, subtract, evenNumbers, sumEvenNumbers} = require("./index.js");
 let number1 = 2;
 let number2 = 29;
 
@@ -16,4 +16,10 @@ test("Sutract two numbers", ()=>{
 test("return even numbers", ()=>{
 	let arrayOfNumbers = [1, 2, 3, 4, 5, 6];
 	expect(evenNumbers(arrayOfNumbers)).toEqual([2, 4, 6]);
+})
+
+test("return sum of even numbers in an array", () =>{
+	let arrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+	let result = sumEvenNumbers(arrayOfNumbers);
+	expect(result).toBe(30);
 })
