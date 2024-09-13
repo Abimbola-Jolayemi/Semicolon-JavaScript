@@ -29,6 +29,9 @@ function countOddNumbers(numbers){
 }
 
 function isPrime(number){
+	if(number < 1){
+		return false;
+	}
 	for(let index = 2; index <= number / 2; index++){
 		if(number / index){
 			return false;
