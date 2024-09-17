@@ -112,4 +112,5 @@ function isLeapYear(year){
 	
 }
 
+
 module.exports = {sumEvenNumbers, findMax, countOddNumbers, isPrime, findFirstDuplicate,  reverseArray, factorial, isPalindrome, sumMultiplesOf3And5, isLeapYear}
