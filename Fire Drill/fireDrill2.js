@@ -70,11 +70,16 @@ const person2 = {
 	}
 
 function StringOfPersonObject(objectPair){
+	let counter = 0;
 	let new_string = "";
 	for(let key_value_pair in objectPair){
-		new_string += key_value_pair + ": " + objectPair[key_value_pair] + ", "
+		new_string += key_value_pair + ": " + objectPair[key_value_pair];
+		counter += 1;
+		if(counter != 3){
+			new_string += ", ";
+		}
 	}
-	return new_string;
+	return `"${new_string}"`;
 }
 
 console.log(StringOfPersonObject(person2));
