@@ -83,11 +83,3 @@ function StringOfPersonObject(objectPair){
 }
 
 console.log(StringOfPersonObject(person2));
-
-
-
-
-
-
-
-
